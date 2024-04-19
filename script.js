@@ -85,8 +85,8 @@ function flipCard(){
         }
 function checkMatch(){
     const divCard=document.querySelectorAll('img');
-    console.log(divCard);
-    console.log(clickedCardId);
+    // console.log(divCard);
+    // console.log(clickedCardId);
     if(selectedCard[0]==selectedCard[1]){
         // console.log('okkkk');
         divCard[clickedCardId[0]].setAttribute('src','Images/white.png')
@@ -96,7 +96,8 @@ function checkMatch(){
         points++;
         score.innerHTML=points;
         if(points==6){
-            score.innerHTML='you won the Game';
+            // score.innerHTML='you won the Game';
+            alert('you won the game');
         }
          
     }else{
@@ -107,5 +108,5 @@ function checkMatch(){
      selectedCard=[] ;
      clickedCardId=[];
 
-     console.log(selectedCard);
+    //  console.log(selectedCard);
     }
